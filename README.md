@@ -5,6 +5,7 @@ All Setup Configurations for Mac or Linux Systems
 
 1. Xcode
 2. Brew (Package Manager)
+3. Git
 
 ### 1. Install XCode Command Line Tools
 
@@ -44,6 +45,21 @@ Installing Brew
 This script installs Homebrew at `/usr/local` 
 
 
+Important Commands to remember:
+
+`brew list` - List all installed Formulae in local system.
+`brew install <formulae` - Install specific Formulae using brew
+`brew uninstall <formulae>` - Uninstall a specific Formulae.
+`brew update` - Fetches newest version of Homebrew and all formulae from Github.
+`brew upgrade [formulae]` - Upgrade outdated Formulae. 
+`brew cleanup` - Removes any older versions of Packages that you have installed.
+`brew doctor` - It will check the system for any potential problems
+
+Top Packages to install with Brew:
+
+https://gist.github.com/indiesquidge/ec010eca3ffa254788c2
+https://www.quora.com/What-are-the-first-or-must-have-homebrew-packages-that-you-install-on-your-Mac
+http://osxdaily.com/2018/03/26/best-homebrew-packages-mac/
 
 
 ### Environment Variables (Setup in MAC OS)
@@ -68,8 +84,35 @@ NOTE: This environment variables also include the "PATH" variable, which we comm
 echo $PATH
 ```
 
+![image](https://user-images.githubusercontent.com/2145211/48972757-bbb99200-efff-11e8-96ac-12705a58b0a5.png)
+
+Please note that in MAC OS, the values are seperated by `:` 
 
 
+4. How do you add directory to the $PATH variable? 
+
+```
+echo 'export PATH="/usr/local/bin:$PATH"' >> ~/.bash_profile
+```
+
+This command takes everything in the single quotes and adds it to `~/.bash_profile` file.
+Everytime you open a new terminal, `.bash_profile` is called.
+The `export $PATH` line tells your system to look in `/usr/local/bin` first, since that's where homebrew installs tools.
+
+NOTE: If you are using `zsh`, use the `~/.zshrc` file to update the PATH.
+
+
+### Troubleshooting
+
+NOTE: Whenever we get the error where we cannot write to a certain path (say `/usr/local`), we can give the following command
+
+```
+sudo chown -R `whoami` /usr/local
+```
+`sudo` allows to run commands using higher access rights
+`chown` means Change Owner
+`-R` flag applies this to all nested files and directories
+`whoami` Variable that represents OSX username
 
 
 
