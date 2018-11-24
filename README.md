@@ -47,13 +47,13 @@ This script installs Homebrew at `/usr/local`
 
 Important Commands to remember:
 
-`brew list` - List all installed Formulae in local system.
-`brew install <formulae` - Install specific Formulae using brew
-`brew uninstall <formulae>` - Uninstall a specific Formulae.
-`brew update` - Fetches newest version of Homebrew and all formulae from Github.
-`brew upgrade [formulae]` - Upgrade outdated Formulae. 
-`brew cleanup` - Removes any older versions of Packages that you have installed.
-`brew doctor` - It will check the system for any potential problems
+* `brew list` - List all installed Formulae in local system.
+* `brew install <formulae` - Install specific Formulae using brew
+* `brew uninstall <formulae>` - Uninstall a specific Formulae.
+* `brew update` - Fetches newest version of Homebrew and all formulae from Github.
+* `brew upgrade [formulae]` - Upgrade outdated Formulae. 
+* `brew cleanup` - Removes any older versions of Packages that you have installed.
+* `brew doctor` - It will check the system for any potential problems
 
 Top Packages to install with Brew:
 
