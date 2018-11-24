@@ -57,9 +57,9 @@ Important Commands to remember:
 
 Top Packages to install with Brew:
 
-https://gist.github.com/indiesquidge/ec010eca3ffa254788c2
-https://www.quora.com/What-are-the-first-or-must-have-homebrew-packages-that-you-install-on-your-Mac
-http://osxdaily.com/2018/03/26/best-homebrew-packages-mac/
+* https://gist.github.com/indiesquidge/ec010eca3ffa254788c2
+* https://www.quora.com/What-are-the-first-or-must-have-homebrew-packages-that-you-install-on-your-Mac
+* http://osxdaily.com/2018/03/26/best-homebrew-packages-mac/
 
 
 ### Environment Variables (Setup in MAC OS)
@@ -109,10 +109,10 @@ NOTE: Whenever we get the error where we cannot write to a certain path (say `/u
 ```
 sudo chown -R `whoami` /usr/local
 ```
-`sudo` allows to run commands using higher access rights
-`chown` means Change Owner
-`-R` flag applies this to all nested files and directories
-`whoami` Variable that represents OSX username
+* `sudo` allows to run commands using higher access rights
+* `chown` means Change Owner
+* `-R` flag applies this to all nested files and directories
+* `whoami` Variable that represents OSX username
 
 
 
