@@ -32,7 +32,7 @@ cd /Library/Developer/CommandLineTools/usr/bin
 
 ### 2. Homebrew
 
-Homebrew is the most popular Package Manager for Mac OS X. It is a tool used to easily install open source applications and manage versions easily.
+Homebrew is the most popular Package Manager for Mac OS X. It is a tool used to easily install open source applications and manage versions of different applications easily.
 
 Installing Brew
 
