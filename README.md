@@ -1,4 +1,4 @@
-# MacSetup
+# MacOS Terminal Setup
 All Setup Configurations for Mac or Linux Systems
 
 ### Top Packages to Install
