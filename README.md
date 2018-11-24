@@ -48,7 +48,7 @@ This script installs Homebrew at `/usr/local`
 
 ### Environment Variables (Setup in MAC OS)
 
-1. What are Environment Variables ?
+1. What are Environment Variables?
 Environment Variables are global system variables accessible by process running under the Operating System (OS). They are useful to store system-wide values such as Directories to search the executable programs (PATH)
 
 2. How to Print all the Environment Variables in Mac OS?
