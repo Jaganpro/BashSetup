@@ -77,9 +77,12 @@ Vim is a highly configurable text editor
 ```
 brew install vim
 ```
+![image](https://user-images.githubusercontent.com/2145211/48984900-b4fa5000-f0cf-11e8-8d82-fc1102ffd272.png)
 
 
-### Environment Variables (Setup in MAC OS)
+### 5. 
+
+### 6. Setup Environment Variables (Setup in MAC OS)
 
 1. What are Environment Variables?
 Environment Variables are global system variables accessible by process running under the Operating System (OS). They are useful to store system-wide values such as Directories to search the executable programs (PATH)
