@@ -3,13 +3,13 @@ All Setup Configurations for Mac or Linux Systems
 
 ### Top Packages to Install
 
-1. Xcode
-2. Brew (Package Manager)
-3. Git
-4. Vim
-5. Z Shell
+* Xcode
+* Brew (Package Manager)
+* Git
+* Vim
+* Z Shell
   * Oh my Zsh
-6. Tree
+* Tree
 
 
 
