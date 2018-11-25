@@ -6,6 +6,7 @@ All Setup Configurations for Mac or Linux Systems
 1. Xcode
 2. Brew (Package Manager)
 3. Git
+4. Vim
 
 ### 1. Install XCode Command Line Tools
 
@@ -60,6 +61,22 @@ Top Packages to install with Brew:
 * https://gist.github.com/indiesquidge/ec010eca3ffa254788c2
 * https://www.quora.com/What-are-the-first-or-must-have-homebrew-packages-that-you-install-on-your-Mac
 * http://osxdaily.com/2018/03/26/best-homebrew-packages-mac/
+
+### 3. Install Git
+
+Git is free and open source distributed version control designed to handle small and large scale development projects. 
+If you already have git, update git to its latest version
+
+![image](https://user-images.githubusercontent.com/2145211/48984655-8038c980-f0cc-11e8-8cc3-9f858e7ee342.png)
+
+
+### 4. Install Vim
+
+Vim is a highly configurable text editor
+
+```
+brew install vim
+```
 
 
 ### Environment Variables (Setup in MAC OS)
