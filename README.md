@@ -88,6 +88,13 @@ Vim is a highly configurable text editor
 ```
 brew install vim
 ```
+
+Once you installed vim, you should be able to check the version
+
+```
+vim --version|head -n 1
+```
+
 ![image](https://user-images.githubusercontent.com/2145211/48984900-b4fa5000-f0cf-11e8-8d82-fc1102ffd272.png)
 
 
@@ -103,19 +110,16 @@ brew install zsh
 ```
 
 Once you install `zsh`, please install the framework `oh my zsh` which helps to manage `zsh` configuration.
-
+The configuration of `zsh` is under `~/.zshrc` file.
 Please see here for more information : https://github.com/robbyrussell/oh-my-zsh
 
-The configuration of `zsh` is under `~/.zshrc`
 
 We can use `curl` to install `oh my zsh`
-
 ```
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 ```
 
 After installing `zsh`, if the default terminal has not changed to `zsh`, use the following command to change the default terminal
-
 ```
 chsh --shell $(which zsh)
 ```
