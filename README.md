@@ -7,6 +7,7 @@ All Setup Configurations for Mac or Linux Systems
 2. Brew (Package Manager)
 3. Git
 4. Vim
+5. Z Shell 
 
 ### 1. Install XCode Command Line Tools
 
@@ -80,7 +81,20 @@ brew install vim
 ![image](https://user-images.githubusercontent.com/2145211/48984900-b4fa5000-f0cf-11e8-8d82-fc1102ffd272.png)
 
 
-### 5. 
+### 5. The Z Shell 
+
+Z Shell or also called as `zsh`, is built on top of Shell. Its primarily installed to configure plugins and themes.
+
+```
+brew install zsh
+```
+
+Once you install `zsh`, please install the framework `oh my zsh` which helps to manage `zsh` configuration.
+
+Please see here for more information : https://github.com/robbyrussell/oh-my-zsh
+
+The configuration of `zsh` is under `~/.zshrc`
+
 
 ### 6. Setup Environment Variables (Setup in MAC OS)
 
