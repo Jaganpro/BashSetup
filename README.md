@@ -9,7 +9,9 @@ All Setup Configurations for Mac or Linux Systems
 * Vim
 * Z Shell
   * Oh my Zsh
-* Tree
+* Utils
+  * Tree
+* JAVA
 
 
 
@@ -89,6 +91,9 @@ brew install vim
 ![image](https://user-images.githubusercontent.com/2145211/48984900-b4fa5000-f0cf-11e8-8d82-fc1102ffd272.png)
 
 
+Refer to this tutorial, if you want to get started with VIM  https://github.com/Jaganpro/Vim-Tutorial
+
+
 ### 5. The Z Shell 
 
 Z Shell or also called as `zsh`, is built on top of Shell. Its primarily installed to configure plugins and themes.
@@ -109,7 +114,7 @@ We can use `curl` to install `oh my zsh`
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 ```
 
-After installing `zsh`, if the default terminal has not changed to `zsh`, 
+After installing `zsh`, if the default terminal has not changed to `zsh`, use the following command to change the default terminal
 
 ```
 chsh --shell $(which zsh)
@@ -141,7 +146,30 @@ tree -L 1
 ![image](https://user-images.githubusercontent.com/2145211/48985232-6fd81d00-f0d3-11e8-9f9d-221c720015a9.png)
 
 
-### 7. 
+### 7. JAVA
+
+If you want to install JAVA, we have the following options
+
+A. Install it using the Oracle Website : https://www.oracle.com/technetwork/java/javase/downloads/index.html
+
+B. Install it using Brew
+
+```
+brew update
+brew tap caskroom/versions
+brew cask install java
+```
+This would install `JAVA 9`. If we want `JAVA 8`, then use `brew cask install java8`
+
+If we have installed the JAVA correctly, then we should be able to verify the version.
+
+![image](https://user-images.githubusercontent.com/2145211/48985404-1ffa5580-f0d5-11e8-9bc2-ce1216596353.png)
+
+The next step is to set the JAVA path correctly. Please see the `Setup Environment Variables` topic to understand more about environment variables. 
+
+```
+export JAVA_HOME="`/usr/libexec/java_home -v 1.8`"
+```
 
 
 ### 8. Setup Environment Variables (Setup in MAC OS)
