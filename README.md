@@ -7,7 +7,10 @@ All Setup Configurations for Mac or Linux Systems
 2. Brew (Package Manager)
 3. Git
 4. Vim
-5. Z Shell 
+5. Z Shell
+6. Tree
+
+
 
 ### 1. Install XCode Command Line Tools
 
@@ -95,8 +98,48 @@ Please see here for more information : https://github.com/robbyrussell/oh-my-zsh
 
 The configuration of `zsh` is under `~/.zshrc`
 
+We can use `curl` to install `oh my zsh`
 
-### 6. Setup Environment Variables (Setup in MAC OS)
+```
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+```
+
+After installing `zsh`, if the default terminal has not changed to `zsh`, 
+
+```
+chsh --shell $(which zsh)
+```
+
+`chsh` - Change Shell
+`--shell` - Name the user's login shell.
+
+
+### 6. Tree
+
+Tree is a command line utility which represents directory structure in a more presentable manner.
+This can be used as a replacement for `ls -l` command.
+
+```
+brew install tree
+```
+
+![image](https://user-images.githubusercontent.com/2145211/48985158-ea546d00-f0d2-11e8-8443-2bb8192e9e84.png)
+
+Usage:
+
+```
+tree -L 1
+```
+
+`-L` - Represents Level of Depth to be rendered
+
+![image](https://user-images.githubusercontent.com/2145211/48985232-6fd81d00-f0d3-11e8-9f9d-221c720015a9.png)
+
+
+### 7. 
+
+
+### 8. Setup Environment Variables (Setup in MAC OS)
 
 1. What are Environment Variables?
 Environment Variables are global system variables accessible by process running under the Operating System (OS). They are useful to store system-wide values such as Directories to search the executable programs (PATH)
