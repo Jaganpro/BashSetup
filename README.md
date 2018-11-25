@@ -8,6 +8,7 @@ All Setup Configurations for Mac or Linux Systems
 3. Git
 4. Vim
 5. Z Shell
+  * Oh my Zsh
 6. Tree
 
 
@@ -70,6 +71,10 @@ Top Packages to install with Brew:
 
 Git is free and open source distributed version control designed to handle small and large scale development projects. 
 If you already have git, update git to its latest version
+
+```
+brew install git
+```
 
 ![image](https://user-images.githubusercontent.com/2145211/48984655-8038c980-f0cc-11e8-8cc3-9f858e7ee342.png)
 
