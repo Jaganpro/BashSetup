@@ -1,9 +1,9 @@
 ## What is Tmux?
-Tmux is a terminal Multiplexer . There are multiple advantages to use tmux
+Tmux is a terminal Multiplexer . There are multiple advantages in using tmux
 
 * Terminal Split Screen
-* Multiple Terminal Sessions
-* Run Processes and not tied to your sessions. (For Example, Long Running sessions can be invoked using Tmux)
+* Multiple Terminal Sessions with simple commands
+* Run Processes that are not tied to your current sessions. (For Example, Long Running sessions can be invoked using Tmux)
 * Ability to SSH using Tmux
 
 
