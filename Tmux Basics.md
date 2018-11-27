@@ -8,22 +8,40 @@ Tmux is a terminal Multiplexer . There are multiple advantages in using tmux
   * Ie, Ability to connect and disconnect sessions at will. Tmux will keep the session alive even if we exit the session.
 * Share sessions with another person (Peer Programming) 
 
-### 1. Create a new Session or Window
+### 1. Install tmux
 
-If we just want to create a new session with default name.
+```
+brew install tmux
+```
+
+### 2. Create a new Session/ detach and attach Session
+
+If we just want to create a new session with default name, just type the following
 
 ```
 tmux
 ```
 
-### 2. Exit tmux session
+In order to get detached from a session
+
+```
+tmux detach
+```
+
+To attach to a session
+
+```
+tmux attach
+```
+
+### 3. Exit tmux session
 
 Just like any other terminal sessions, we can use `exit` command to exit tmux sessions
 ```
 exit
 ```
 
-### 3. Tmux Config
+### 4. Tmux Config
 
 In order to manage configuration of Tmux, we can use the following file
 
@@ -31,7 +49,7 @@ In order to manage configuration of Tmux, we can use the following file
 vim ~/.tmux.conf
 ```
 
-### 4. Commands using ctr-b
+### 5. Commands using ctr-b
 
 `ctrl-b` --> Prefix used in Tmux to invoke Tmux commands.
 NOTE: This only works within Tmux terminals.
@@ -57,7 +75,7 @@ Session Management:
 
 * `ctrl-b + d` -- Detach from the current session
 
-### 5. Creating a new Tmux Session
+### 6. Creating a new Tmux Session
 
 ```
 tmux new -s newshell
