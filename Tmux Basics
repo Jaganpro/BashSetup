@@ -1,0 +1,29 @@
+## What is Tmux?
+Tmux is a terminal Multiplexer . There are multiple advantages to use tmux
+
+* Terminal Split Screen
+* Multiple Terminal Sessions
+* Run Processes and not tied to your sessions. (For Example, Long Running sessions can be invoked using Tmux)
+* Ability to SSH using Tmux
+
+
+### 1. Create a new Session or Window
+
+If we just want to create a new session with default name.
+
+```
+tmux
+```
+
+If we want to specify a name, use the following syntax
+
+```
+tmux new -s <name> 
+```
+
+### 2. Exit tmux session
+
+Just like any other terminal sessions, we can use `exit` command to exit tmux sessions
+```
+exit
+```
