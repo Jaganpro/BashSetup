@@ -16,12 +16,6 @@ If we just want to create a new session with default name.
 tmux
 ```
 
-If we want to specify a name, use the following syntax
-
-```
-tmux new -s <name> 
-```
-
 ### 2. Exit tmux session
 
 Just like any other terminal sessions, we can use `exit` command to exit tmux sessions
@@ -54,17 +48,28 @@ Examples:
 Splitting Windows:
 
 * `ctrl-b + %` -- Split Windows Vertically
-* `ctrl-b + :` -- Split Window Horizontally
+* `ctrl-b + :` -- It helps us to provide named commands to Tmux. When we use `:split-window` we would be abke to split Window Horizontally (As there is no key-binding for vertical split)
+
+Session Management:
+
+* `tmux list-sessions` -- List all tmux sessions
+* `tmux attach -t newshell` -- Attaching to existing tmux sessions
+
+* `ctrl-b + d` -- Detach from the current session
+
+### 5. Creating a new Tmux Session
+
+```
+tmux new -s newshell
+```
 
 
 
 
 
 
-
-
-
-
+### Things to learn
+1. Installing tmuxp
 
 
 
