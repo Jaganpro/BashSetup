@@ -26,12 +26,16 @@ In order to get detached from a session
 
 ```
 tmux detach
+tmux detach #
+tmux detach -t <name>
 ```
 
 To attach to a session
 
 ```
 tmux attach
+tmux attach #
+tmux attach -t <name>
 ```
 
 ### 3. Exit tmux session
@@ -54,19 +58,22 @@ vim ~/.tmux.conf
 `ctrl-b` --> Prefix used in Tmux to invoke Tmux commands.
 NOTE: This only works within Tmux terminals.
   
-Examples:
+Managing Tmux Windows:
 
 * `ctrl-b + c` -- Create a new tmux Window
-* `ctrl-b + ,` -- Rename current tmux Window
-
 * `ctrl-b + p` -- Tab to previous tmux Window (p - Previous)
 * `ctrl-b + n` -- Tab to next tmux Window (n - Next)
+* `ctrl-b + 0-9` -- Switching between tmux window using number
+
 * `ctrl-b + w` -- List all Tmux window
+* `ctrl-b + ,` -- Rename current tmux Window
+* `ctrl-b + x` - Force kill active session
 
 Splitting Windows:
 
 * `ctrl-b + %` -- Split Windows Vertically
-* `ctrl-b + :` -- It helps us to provide named commands to Tmux. When we use `:split-window` we would be abke to split Window Horizontally (As there is no key-binding for vertical split)
+* `ctrl-b + :` -- It helps us to provide named commands to Tmux. When we use `:split-window` we would be abke to split 
+* `ctrl-b + arrowkeys` -- Switch between different panes within tmux window
 
 Session Management:
 
@@ -81,17 +88,20 @@ Session Management:
 tmux new -s newshell
 ```
 
+### 7. Destroy all Tmux Sessions
 
+To destroy all the sessions
+
+```
+tmux kill-server	
+```
+If inside tmux, and if we want to kill the current session
+
+* `ctrl-b + x` - Force kill active session
 
 
 
 
 ### Things to learn
-1. Installing tmuxp
-
-
-
-
-
-
-
+1. Configuring tmux config file
+2. Installing tmuxp for predefined tmux workstation
