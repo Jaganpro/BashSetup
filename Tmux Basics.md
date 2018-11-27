@@ -55,8 +55,8 @@ vim ~/.tmux.conf
 
 ### 5. Commands using ctr-b
 
-`ctrl-b` --> Prefix used in Tmux to invoke Tmux commands.
-NOTE: This only works within Tmux terminals.
+* `ctrl-b` --> Prefix used in Tmux to invoke Tmux commands.
+* NOTE: This only works within Tmux terminals.
   
 Managing Tmux Windows:
 
