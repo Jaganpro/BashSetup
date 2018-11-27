@@ -44,17 +44,17 @@ NOTE: This only works within Tmux terminals.
   
 Examples:
 
-* ctrl-b + c -- Create a new tmux Window
-* ctrl-b + , -- Rename current tmux Window
+* `ctrl-b + c` -- Create a new tmux Window
+* `ctrl-b + ,` -- Rename current tmux Window
 
-* ctrl-b + p -- Tab to previous tmux Window (p - Previous)
-* ctrl-b + n -- Tab to next tmux Window (n - Next)
-* ctrl-b + w -- List all Tmux window
+* `ctrl-b + p` -- Tab to previous tmux Window (p - Previous)
+* `ctrl-b + n` -- Tab to next tmux Window (n - Next)
+* `ctrl-b + w` -- List all Tmux window
 
 Splitting Windows:
 
-* ctrl-b + % -- Split Windows Vertically
-* ctrl-b + : -- Split Window Horizontally
+* `ctrl-b + %` -- Split Windows Vertically
+* `ctrl-b + :` -- Split Window Horizontally
 
 
 
