@@ -88,7 +88,10 @@ write(save) the file, but don't exit.
 :w <filename>
 ```
 
-NOTE: If you want to quit vim and save the file, use the following command `:wq`
+If you want to quit vim and save the file, use the following command 
+```
+:wq
+```
 
 ### [NORMAL MODE] Moving around in VIM Editor (Cursor Movements) 
 
