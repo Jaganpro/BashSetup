@@ -202,12 +202,17 @@ Visual mode is usually used to highlight any given text in the editor
 
 ### Cut and Paste in VIM [Available in VISUAL MODE]
 
+COPY
 * `yy` - yank(copy) a line
 * `2yy` - yank(copy) 2 lines
 * `yw` - yank(copy) the characters of the word from the cursor position to the starting of next work
 * `y$` - yank(copy) to the end of the line
+
+PASTE
 * `p` - put(paste) the clipboard after cursor
 * `P` - put(paste) before cursor
+
+DELETE
 * `dd` - delete(cut) a line
 * `2dd` - delete(cut) 2 lines
 * `dw` - delete(cut) the characters of the word from the cursor position to the start of the word
@@ -215,9 +220,19 @@ Visual mode is usually used to highlight any given text in the editor
 * `d$` - delete(cut) to the end of the line
 * `x` - delete(cut) character
 
-### Search and Replace
+### Search and Replace (Within a single file)
 
-Coming Soon!
+SEARCH
+* `/<searchstring>` - search for pattern
+* `?<searchstring>` - search backward for pattern
+
+NAVIGATION on HIGHLIGHTED SEARCH
+* `n` - repeat search in same direction (Next)
+* `N` - repeat search in opposite direction (Next)
+
+REPLACE
+* `:%s/old/new/g` - replace all `old text` with `new text` throught the file (g - Global)
+* `:%s/old/new/gc` - replace all `old text` with `new text` throught the file with confirmation (gc - Global with Confirmation)
 
 ### Search in Multiple Files
 
