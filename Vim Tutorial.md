@@ -99,6 +99,14 @@ right, down, up, left (h, j, k, l)
   * `E` - Jump forward to the end of the word (Words can contain puntuation)
   * `b` - Jump backwards to the start of the word
   * `B` - Jump forward to the end of the word (Words can contain puntuation)
+  
+* (0$) (Line Combos)
+  * `0` - Jump to the start of the line
+  * `$` - Jump to the end of the line
+  
+* (ggG) (Document Combos)
+  * `gg` - Jump to first line of the document
+  * `G` - Jump to last line of the document
 
 
 Get familier with usage of Arguments in VIM. For example,
