@@ -28,9 +28,13 @@ There are 3 different types of modes in VIM:
 ### Navigating between modes
 
 * To go from `Normal Mode` to `Insert Mode`, press `i`
+* To go from `Normal Mode` to `Visual Mode`, press `v`
 * To go from `Insert Mode` to `Normal Mode`, press `Esc`
+* To go from `Visual Mode` to `Normal Mode`, press `Esc`
 
 ### Opening VIM Editor
+
+Just type `vim` to get into VIM editor
 
 ```
 vim
@@ -40,12 +44,6 @@ vim
 
 ```
 vim vimtutordemo.txt
-```
-
-The other way to open VIM Editor is to just type "vim"
-
-```
-vim
 ```
 
 Once the vim editor is open, we can open file in `Normal Mode`, by issuing the following command
@@ -65,7 +63,12 @@ NOTE: Here `:e` short form for EDIT. `:o` is the short form for OPEN.
 ![image](https://user-images.githubusercontent.com/2145211/48583941-7a85fb80-e8f6-11e8-8be9-348b5d7b0de8.png)
 
 
-### Closing the VIM Editor
+### Closing the VIM Editor (Quit)
+
+The below command fails if there are any unsaved changes.
+```
+:q
+```
 
 This will close the editor without saving the file.
 ```
@@ -75,18 +78,17 @@ This will close the editor without saving the file.
 ### Saving a file in VIM Editor
 
 ```
+:saveas <filename>
+```
+
+write(save) the file, but don't exit.
+```
 :w <filename>
-:w test.txt
 ```
 
-NOTE: There is a special program called as the "VimTutor". It can be run using the command 'vimtutor'. It is a text file which describes the basics of the VIM Editor.
+NOTE: If you want to quit vim and save the file, use the following command `:wq`
 
-### Creating a New Tab in VIM
-
-```
-:tabnew
-```
-### Moving around in VIM Editor (Cursor Movements) [IN NORMAL MODE]
+### [NORMAL MODE] Moving around in VIM Editor (Cursor Movements) 
 
 * (hjkl combo) (Basic Arrow keys replacements)
   * `h` - move cursor left
@@ -120,12 +122,14 @@ NOTE: There is a special program called as the "VimTutor". It can be run using t
 * (ctrl-b and f) (Screen Navigation)
   * `ctrl+b` - move back one full screen
   * `ctrl+f` - move forward one full screen
+  * `ctrl+d` - move forward 1/2 screen
+  * `ctrl+u` - move back 1/2 screen
 
 * (ggG) (Document Navigation)
   * `gg` - Jump to first line of the document
   * `G` - Jump to last line of the document
 
-### Advanced movements around VIM
+### [NORMAL MODE] Advanced movements around VIM 
 
 Get familier with usage of Arguments in VIM. For example,
 If we want to skip and go down 10 lines, we can use the following: (Ie, it is executing 'j' command 10 times)
@@ -134,13 +138,13 @@ If we want to skip and go down 10 lines, we can use the following: (Ie, it is ex
 10j
 ```
 
-Backus Normal Form is also supported in VIM:
-
-In short
+Backus Normal Form style movement commands are supported in VIM.
+In short:
 
 * `fx` - Jump to next occurance of character x
 * `tx` - Jump to before next occurance of character x
 
+SYNTAX:
 ```
 [(n)um] <verb> <n(o)un>
 
@@ -154,52 +158,51 @@ Anything in <> --> Required
 * `[n]T<o>` - Backward until the (nth) (o) (Exclusive)
 
 
+### [INSERT MODE] Inserting/Appending Text 
 
+* `i` - Insert before the cursor
+* `I` - Insert at the beginning of the line
+* `a` - Insert (Append) after the cursor
+* `A` - Insert (Append) at the end of the line
+* `o` - Append (Open) a new line below the current line
+* `O` - Append (Open) a new line above the current line
+* `ea` - Insert (Append) at the end of the word
 
-### Editing Text in VIM Editor (iIxXsSAoOcC)
+### [INSERT MODE] Editing Text 
 
-Once we are in the document, we can start editing the files. There are multiple ways to edit files. But here are the common attributes
+* `r` - replace a single character
+* `cc` - change (replace) entire line
+* `cw` - change (replace) to the end of word
+* `c$` - change (replace) to the end of the line
+* `s` - delete character and (substitute) text
+* `S` - delete line and (substitute) text (Same as `cc`)
 
-	`i` - Enter the Insert mode at Cursor
-	`I` - Enter the Insert mode at the first non-blank character
-	`x` - Delete the current Character
-	`X` - Delete the one on the left
-	`s` - Substitute Character under cursor.
-	`S` - Substitute the entire line
-	`A` - Append text at End of Line
-	`o` - Open Above - Enter Insert more on the next line
-	`O` - Open Below - Enter Insert more on the line above
-	`c` - Change
-	`C` - Change to End of Line (Delete the characters from the Cursor Position to EOL)
-	
-### Editing in VIM : Beyond Basics - 1 (wWbBeE)
+* `u` - Undo
+* `Ctrl + r` - Redo
+* `.` - Repeat last command
 
-	`w` - (Next word) Forward to the beginning of the next word (Seperated by characters)
-	`W` - (Next WORD) Forward to the beginning of the next WORD (Seperated by White Space)
-	`b` - (Back word) Backward to the next beginning of the word
-	`B` - (Back Word) Backward to the next beginning of the WORD
-	`e` - (end word) Forward to the next end of the word
-	`E` - (end WORD) Forward to the next end of the WORD
-	
-NOTE: We can also use this as arguments, For example, skips 3 words
+### [VISUAL MODE] Marking Text
 
-```
-3w
-```
+Coming Soon!
 
-NOTE 2: `hjkl` and `wbe` are introduction to commands which have `numbers` before the command.
+### Cut and Paste in VIM
 
-### Editing in VIM : Beyond Basics - 2 (fFtT)
+Coming Soon!
 
-NOTE: These commands introduces full syntax of VIM Editor
+### Search and Replace
 
+Coming Soon!
 
+### Search in Multiple Files
+
+Coming Soon!
+
+### Tab Management in VIM
+
+Coming Soon!
 
 ### VIM Cheatsheet
 	
 ![image](https://user-images.githubusercontent.com/2145211/48723633-22504180-ebf5-11e8-8aad-c9a7ebf61846.png)
 
-Credits: www.viemu.com
-
-
-
+Credits for VIM Cheatsheet: www.viemu.com
