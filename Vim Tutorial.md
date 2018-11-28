@@ -125,10 +125,10 @@ If you want to quit vim and save the file, use the following command
   * `L` - move to the bottom of the screen
   
 * (ctrl-b,f,d,u) (Screen Navigation)
-  * `ctrl+b` - move back one full screen
-  * `ctrl+f` - move forward one full screen
-  * `ctrl+d` - move forward 1/2 screen
-  * `ctrl+u` - move back 1/2 screen
+  * `ctrl+f` - Move Forward a Page
+  * `ctrl+b` - Move Backward a Page
+  * `ctrl+d` - Move forward 1/2 screen
+  * `ctrl+u` - Move back 1/2 screen
 
 * (ggG) (Document Navigation)
   * `gg` - Jump to first line of the document
