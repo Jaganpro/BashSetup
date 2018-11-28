@@ -7,13 +7,17 @@ Most of the Mac computers should have VIM pre-installed
 
 ![image](https://user-images.githubusercontent.com/2145211/48574771-06d7f480-e8de-11e8-8294-f3fda37adeea.png)
 
+If VIM is not installed, please use homebrew to install it
+
+```
+brew install vim
+```
 
 ### Introduction
 
-Vim in essense a Free and Open Source(FOSS) advanced text editor. It is highly configurable.
+Vim is a Free and Open Source(FOSS) advanced text editor. It is highly configurable.
 It different from other editors because it introduces the concept of Modality (Ie, it has different modes).
-We spend more time reading code than writing it. VIM is optimized for what you do most (Reading/Navigating Text)
-
+We spend more time reading code than writing it. VIM is optimized for what you do most (Ie, Reading/Navigating Text)
 
 There are 3 different types of modes in VIM:
 
@@ -21,16 +25,21 @@ There are 3 different types of modes in VIM:
 * `Normal Mode` -- In this mode we are able to navigate inside the Editor
 * `Visual Mode` -- Mainly used to Select Text. There are variations in the text.  
 
-NOTE:
-To move between different modes, press `ESC` followed by the command.
-Ie, Pressing `ESC` quits from Insert Mode to Normal Mode. Then we can use `:` and type the command.
-We can press `i` again to get back into Insert Mode.
+### Navigating between modes
+
+* To go from `Normal Mode` to `Insert Mode`, press `i`
+* To go from `Insert Mode` to `Normal Mode`, press `Esc`
+
+### Opening VIM Editor
+
+```
+vim
+```
 
 ### Opening files in VIM Editor
 
 ```
-vim <filename>
-vim test.txt
+vim vimtutordemo.txt
 ```
 
 The other way to open VIM Editor is to just type "vim"
@@ -39,13 +48,19 @@ The other way to open VIM Editor is to just type "vim"
 vim
 ```
 
+Once the vim editor is open, we can open file in `Normal Mode`, by issuing the following command
+
+```
+:o vimtutordemo.txt
+```
+
 Once the vim editor is open, we can go to the insert mode (Edit Mode) and provide the file name to edit in VIM.
 
 ```
 :e vimtutordemo.txt
 ```
 
-NOTE: Here `:e` short form for EDIT.
+NOTE: Here `:e` short form for EDIT. `:o` is the short form for OPEN.
 
 ![image](https://user-images.githubusercontent.com/2145211/48583941-7a85fb80-e8f6-11e8-8be9-348b5d7b0de8.png)
 
