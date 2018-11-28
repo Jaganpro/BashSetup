@@ -22,7 +22,7 @@ We spend more time reading code than writing it. VIM is optimized for what you d
 There are 3 different types of modes in VIM:
 
 * `Insert Mode` -- In this mode we are able to write text in the Editor
-* `Normal Mode` -- In this mode we are able to navigate inside the Editor
+* `Normal Mode [or] Command Mode` -- In this mode we are able to navigate inside the Editor
 * `Visual Mode` -- Mainly used to Select Text. There are variations in the text.  
 
 ### Navigating between modes
@@ -93,7 +93,7 @@ If you want to quit vim and save the file, use the following command
 :wq
 ```
 
-### [NORMAL MODE] Moving around in VIM Editor (Cursor Movements) 
+### Moving around in VIM Editor (Cursor Movements) [Available in NORMAL MODE] 
 
 * (hjkl combo) (Basic Arrow keys replacements)
   * `h` - move cursor left
@@ -134,7 +134,7 @@ If you want to quit vim and save the file, use the following command
   * `gg` - Jump to first line of the document
   * `G` - Jump to last line of the document
 
-### [NORMAL MODE] Advanced movements around VIM 
+### Advanced movements around VIM [Available in NORMAL MODE] 
 
 Get familier with usage of Arguments in VIM. For example,
 If we want to skip and go down 10 lines, we can use the following: (Ie, it is executing 'j' command 10 times)
@@ -163,7 +163,7 @@ Anything in <> --> Required
 * `[n]T<o>` - Backward until the (nth) (o) (Exclusive)
 
 
-### [INSERT MODE] Inserting/Appending Text (Sounds live vowels to me!)
+### Inserting/Appending Text (Sounds live vowels to me!) [Available in INSERT MODE] 
 
 * `i` - Insert before the cursor
 * `I` - Insert at the beginning of the line
@@ -173,7 +173,7 @@ Anything in <> --> Required
 * `O` - Append (Open) a new line above the current line
 * `ea` - Insert (Append) at the end of the word
 
-### [INSERT MODE] Editing Text 
+### Editing Text [Available in INSERT MODE] 
 
 * `r` - replace a single character
 * `cc` - change (replace) entire line
@@ -186,13 +186,34 @@ Anything in <> --> Required
 * `Ctrl + r` - Redo
 * `.` - Repeat last command
 
-### [VISUAL MODE] Marking Text
+### Marking / Highlighting Text [Available in VISUAL MODE] 
 
-Coming Soon!
+Visual mode is usually used to highlight any given text in the editor
 
-### Cut and Paste in VIM
+* `v` - to get into visual mode.
+* `Shift + v` - to highlight entire line during selection
+* `y` - Yank (Copy) Marked Text
+* `d` - Delete Marked Text
+* `aw` - mark a word
+* `ab` - a block with ()
+* `aB` - a block with {}
+* `ib` - inner block with ()
+* `iB` - inner block with {}
 
-Coming Soon!
+### Cut and Paste in VIM [Available in VISUAL MODE]
+
+* `yy` - yank(copy) a line
+* `2yy` - yank(copy) 2 lines
+* `yw` - yank(copy) the characters of the word from the cursor position to the starting of next work
+* `y$` - yank(copy) to the end of the line
+* `p` - put(paste) the clipboard after cursor
+* `P` - put(paste) before cursor
+* `dd` - delete(cut) a line
+* `2dd` - delete(cut) 2 lines
+* `dw` - delete(cut) the characters of the word from the cursor position to the start of the word
+* `D` - delete
+* `d$` - delete(cut) to the end of the line
+* `x` - delete(cut) character
 
 ### Search and Replace
 
