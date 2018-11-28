@@ -101,7 +101,7 @@ If you want to quit vim and save the file, use the following command
   * `k` - move cursor up
   * `l` - move cursor right
 
-* (wWeEbB Combo) (Tip to remember -- WEB) (Jumping between words)
+* (wWeEbB Combo) (Tip to Remember -- WEB) (Jumping between words)
   * `w` - Jump forward to the start of the word
   * `W` - Jump forward to the start of the word (Words can contain puntuation)
   * `e` - Jump forward to the end of the word
@@ -119,12 +119,12 @@ If you want to quit vim and save the file, use the following command
   * `)` - Jump to next Sentence
   * `(` - Jump to Previous Sentence
 
-* (HML Combo) (Lives closer to hjkl arrow keys) (Jumping within current Screen)
+* (HML Combo) (Tip to Remember - High, Medium, Low) (Jumping within current Screen)
   * `H` - move to the top of the screen
   * `M` - move to the middle of the screen
   * `L` - move to the bottom of the screen
   
-* (ctrl-b and f) (Screen Navigation)
+* (ctrl-b,f,d,u) (Screen Navigation)
   * `ctrl+b` - move back one full screen
   * `ctrl+f` - move forward one full screen
   * `ctrl+d` - move forward 1/2 screen
@@ -163,7 +163,7 @@ Anything in <> --> Required
 * `[n]T<o>` - Backward until the (nth) (o) (Exclusive)
 
 
-### [INSERT MODE] Inserting/Appending Text 
+### [INSERT MODE] Inserting/Appending Text (Sounds live vowels to me!)
 
 * `i` - Insert before the cursor
 * `I` - Insert at the beginning of the line
