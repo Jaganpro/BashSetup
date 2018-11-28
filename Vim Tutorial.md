@@ -66,31 +66,18 @@ This will close the editor without saving the file.
 
 NOTE: There is a special program called as the "VimTutor". It can be run using the command 'vimtutor'. It is a text file which describes the basics of the VIM Editor.
 
-### Arrow keys in VIM Editor (hjkl)
+### Creating a New Tab in VIM
 
-Once you are inside of the VIM Editor, you can use the arrow keys or the following keys for the cursor to move 
-right, down, up, left (h, j, k, l)
-
-
-	    k
-	    ^
-	h <   > l
-	    v
-	    j
-
-
-### Moving around in VIM Editor (Cursor Movements)
+```
+:tabnew
+```
+### Moving around in VIM Editor (Cursor Movements) [IN NORMAL MODE]
 
 * (hjkl combo) (Basic Arrow keys replacements)
   * `h` - move cursor left
   * `j` - move cursor down
   * `k` - move cursor up
   * `l` - move cursor right
-
-* (HML Combo) (Lives closer to hjkl arrow keys) (Jumping between Screens)
-  * `H` - move to the top of the screen
-  * `M` - move to the middle of the screen
-  * `L` - move to the bottom of the screen
 
 * (wWeEbB Combo) (Tip to remember -- WEB) (Jumping between words)
   * `w` - Jump forward to the start of the word
@@ -100,14 +87,28 @@ right, down, up, left (h, j, k, l)
   * `b` - Jump backwards to the start of the word
   * `B` - Jump forward to the end of the word (Words can contain puntuation)
   
-* (0$) (Line Combos)
+* (0$) (Line Navigation)
   * `0` - Jump to the start of the line
   * `$` - Jump to the end of the line
   
-* (ggG) (Document Combos)
+* (){} (Sentence and Paragraph Navigation)
+  * `}` - Jump to next Paragraph ( or function/block when editing code)
+  * `{` - Jump to previous Paragraph
+  * `)` - Jump to next Sentence
+  * `(` - Jump to Previous Sentence
+
+* (HML Combo) (Lives closer to hjkl arrow keys) (Jumping within current Screen)
+  * `H` - move to the top of the screen
+  * `M` - move to the middle of the screen
+  * `L` - move to the bottom of the screen
+  
+* (ctrl-b and f) (Screen Navigation)
+  * `ctrl+b` - move back one full screen
+  * `ctrl+f` - move forward one full screen
+
+* (ggG) (Document Navigation)
   * `gg` - Jump to first line of the document
   * `G` - Jump to last line of the document
-
 
 Get familier with usage of Arguments in VIM. For example,
 If we want to skip and go down 10 lines, we can use the following: (Ie, it is executing 'j' command 10 times)
@@ -118,11 +119,7 @@ If we want to skip and go down 10 lines, we can use the following: (Ie, it is ex
 
 
 
-### Creating a New Tab in VIM
 
-```
-:tabnew
-```
 
 ### Editing Text in VIM Editor (iIxXsSAoOcC)
 
