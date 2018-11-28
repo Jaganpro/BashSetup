@@ -40,19 +40,21 @@ Just type `vim` to get into VIM editor
 vim
 ```
 
-### Opening files in VIM Editor
+[OR] if you want to open a file directly in VIM editor
 
 ```
 vim vimtutordemo.txt
 ```
 
-Once the vim editor is open, we can open file in `Normal Mode`, by issuing the following command
+### Opening files in VIM Editor
+
+If VIM editor is already open, we can open a file by issuing the following command [Opens in NORMAL Mode]
 
 ```
 :o vimtutordemo.txt
 ```
 
-Once the vim editor is open, we can go to the insert mode (Edit Mode) and provide the file name to edit in VIM.
+If VIM editor is already open, we can edit the file by issuing the following command [Opens in EDIT Mode].
 
 ```
 :e vimtutordemo.txt
