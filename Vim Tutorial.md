@@ -39,7 +39,7 @@ The other way to open VIM Editor is to just type "vim"
 vim
 ```
 
-This opens up the Vim Editor. Then we can go to the insert mode (Edit Mode) and provide the file name to edit in VIM.
+Once the vim editor is open, we can go to the insert mode (Edit Mode) and provide the file name to edit in VIM.
 
 ```
 :e vimtutordemo.txt
@@ -66,7 +66,7 @@ This will close the editor without saving the file.
 
 NOTE: There is a special program called as the "VimTutor". It can be run using the command 'vimtutor'. It is a text file which describes the basics of the VIM Editor.
 
-### Moving around the VIM Editor (hjkl)
+### Arrow keys in VIM Editor (hjkl)
 
 Once you are inside of the VIM Editor, you can use the arrow keys or the following keys for the cursor to move 
 right, down, up, left (h, j, k, l)
@@ -78,13 +78,37 @@ right, down, up, left (h, j, k, l)
 	    v
 	    j
 
-They also introduce us to the concept/Usage of Arguments in VIM. For example,
 
+### Moving around in VIM Editor (Cursor Movements)
+
+* (hjkl combo) (Basic Arrow keys replacements)
+  * `h` - move cursor left
+  * `j` - move cursor down
+  * `k` - move cursor up
+  * `l` - move cursor right
+
+* (HML Combo) (Lives closer to hjkl arrow keys) (Jumping between Screens)
+  * `H` - move to the top of the screen
+  * `M` - move to the middle of the screen
+  * `L` - move to the bottom of the screen
+
+* (wWeEbB Combo) (Tip to remember -- WEB) (Jumping between words)
+  * `w` - Jump forward to the start of the word
+  * `W` - Jump forward to the start of the word (Words can contain puntuation)
+  * `e` - Jump forward to the end of the word
+  * `E` - Jump forward to the end of the word (Words can contain puntuation)
+  * `b` - Jump backwards to the start of the word
+  * `B` - Jump forward to the end of the word (Words can contain puntuation)
+
+
+Get familier with usage of Arguments in VIM. For example,
 If we want to skip and go down 10 lines, we can use the following: (Ie, it is executing 'j' command 10 times)
 
 ```
 10j
 ```
+
+
 
 ### Creating a New Tab in VIM
 
@@ -97,7 +121,7 @@ If we want to skip and go down 10 lines, we can use the following: (Ie, it is ex
 Once we are in the document, we can start editing the files. There are multiple ways to edit files. But here are the common attributes
 
 	`i` - Enter the Insert mode at Cursor
-	`I` - Entet the Insert mode at the first non-blank character
+	`I` - Enter the Insert mode at the first non-blank character
 	`x` - Delete the current Character
 	`X` - Delete the one on the left
 	`s` - Substitute Character under cursor.
@@ -150,101 +174,5 @@ Anything in <> --> Required
 
 Credits: www.viemu.com
 
-### Configuring VIM Editor
 
-In order to configure VIM Editor, we have to edit `~/.vimrc` file.
-
-```
-vim ~/.virmc
-```
-
-The following are list of options to consider enabling before using VIM Editor.
-
-1. Enabling Current Line Numbers in VIM Editor
-
-```
-set number
-```
-
-2. Enable Relative Line Number
-
-```
-set relativenumber
-```
-
-3. Turn on Syntax Highlighting
-
-```
-syntax enable
-```
-
-4. Set History to retain more commands. (By Default, VIM Saves last 8 commands).
-
-```
-set history=100
-```
-
-5. AutoIndent (Ie, if my current line is indented 3 spaces, when i press enter, the next line should automatically indent 3 spaces as well
-
-```
-set autoindent
-```
-
-NOTE: If you want to undo the default indent behavior just use `^d (Ctrl + d)` 
-
-6. Make Search Case Insensitive
-
-```
-set ignorecase
-```
-
-7. Highlight Matching Search String
-
-```
-set hlsearch
-```
-
-8. Display mode at the bottom of the screen
-
-```
-set showmode
-```
-
-9. Remove compatibility of old vi editor
-```
-set nocompatible
-```
-
-
-### TODO: Other things to learn / Needs more research
-
-1. sudo apt -- Command
-2. How to update apt 
-3. What are all the packaged installed for "apt" 
-4. How to update the JAVA_HOME variable
-5. Learn more about the "open ~/.bash_profile" 
-6. Learn more about "sudo apt-get update" command
-7. "sudo apt-get install vim"
-8. Setting up ".vimrc" file
-9. http://fisadev.github.io/fisa-vim-config/  -- Fisa Vim Config
-10. Popular Plugins to Install for Vim -- For example : File Explorer
-11. Remapping CAPS Lock Key to Escape -- https://pqrs.org/osx/karabiner/index.html
-12. Vim CheatSheet - https://www.glump.net/_media/howto/desktop/vim-graphical-cheat-sheet-and-tutorial/vi-vim-cheat-sheet-and-tutorial.pdf
-13. Configuring VIM - ~/.vimrc  -- This is the file to configure VIM . "Using ~ means Home Directory" - Make sure that we check it in GITHUB - 
-14. Use other peoples vimrc dot files - 
-15. Dot Files Management in Mac - https://github.com/thoughtbot/dotfiles
-16. Plugins for Development:
-	A. Ctrl P - Fuzzy file search
-	B. NerdTree
-	C. AG for Vim - Helps to search through projects
-17. :set showcmd
-18. https://nvie.com/posts/how-i-boosted-my-vim/
-19. https://medium.com/usevim/vim-101-set-hidden-f78800142855
-20. VIM Airline : https://github.com/vim-airline/vim-airline
-21. VIM Themes : https://github.com/reedes/vim-thematic
-22. NerdTree Setup : https://medium.com/@victormours/a-better-nerdtree-setup-3d3921abc0b9
-23. Common Configuration setup of VIM: https://github.com/carlhuda/janus
-24. Using i3 for Window Management. This is only available in linux. So use https://ianyh.com/amethyst/ for Mac.
-25. VIM + Tmux
-26. https://medium.freecodecamp.org/learn-linux-vim-basic-features-19134461ab85
 
