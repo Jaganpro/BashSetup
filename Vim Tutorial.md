@@ -17,12 +17,12 @@ We spend more time reading code than writing it. VIM is optimized for what you d
 
 There are 3 different types of modes in VIM:
 
-* Insert Mode -- In this mode we are able to write text in the Editor
-* Normal Mode -- In this mode we are able to navigate inside the Editor
-* Visual Mode -- Mainly used to Select Text. There are variations in the text.  
+* `Insert Mode` -- In this mode we are able to write text in the Editor
+* `Normal Mode` -- In this mode we are able to navigate inside the Editor
+* `Visual Mode` -- Mainly used to Select Text. There are variations in the text.  
 
 NOTE:
-To move between different modes, press "ESC" followed by the command.
+To move between different modes, press `ESC` followed by the command.
 Ie, Pressing `ESC` quits from Insert Mode to Normal Mode. Then we can use `:` and type the command.
 We can press `i` again to get back into Insert Mode.
 
@@ -45,7 +45,7 @@ Once the vim editor is open, we can go to the insert mode (Edit Mode) and provid
 :e vimtutordemo.txt
 ```
 
-NOTE: Here ":e" short form for EDIT.
+NOTE: Here `:e` short form for EDIT.
 
 ![image](https://user-images.githubusercontent.com/2145211/48583941-7a85fb80-e8f6-11e8-8be9-348b5d7b0de8.png)
 
@@ -110,6 +110,8 @@ NOTE: There is a special program called as the "VimTutor". It can be run using t
   * `gg` - Jump to first line of the document
   * `G` - Jump to last line of the document
 
+### Advanced movements around VIM
+
 Get familier with usage of Arguments in VIM. For example,
 If we want to skip and go down 10 lines, we can use the following: (Ie, it is executing 'j' command 10 times)
 
@@ -117,6 +119,24 @@ If we want to skip and go down 10 lines, we can use the following: (Ie, it is ex
 10j
 ```
 
+Backus Normal Form is also supported in VIM:
+
+In short
+
+* `fx` - Jump to next occurance of character x
+* `tx` - Jump to before next occurance of character x
+
+```
+[(n)um] <verb> <n(o)un>
+
+Anything in [] --> Optional
+Anything in <> --> Required
+```
+
+* `[n]f<o>` - Forward until the (nth) (o) (Inclusive)
+* `[n]F<o>` - Backward until the (nth) (o) (Inclusive)
+* `[n]t<o>` - Forward until the (nth) (o) (Exclusive)
+* `[n]T<o>` - Backward until the (nth) (o) (Exclusive)
 
 
 
@@ -158,19 +178,6 @@ NOTE 2: `hjkl` and `wbe` are introduction to commands which have `numbers` befor
 
 NOTE: These commands introduces full syntax of VIM Editor
 
-Backus Normal Form for VIM:
-
-```
-[(n)um] <verb> <n(o)un>
-
-Anything in [] --> Optional
-Anything in <> --> Required
-```
-
-* `[n]f<o>` - Forward until the (nth) (o) (Inclusive)
-* `[n]F<o>` - Backward until the (nth) (o) (Inclusive)
-* `[n]t<o>` - Forward until the (nth) (o) (Exclusive)
-* `[n]T<o>` - Backward until the (nth) (o) (Exclusive)
 
 
 ### VIM Cheatsheet
