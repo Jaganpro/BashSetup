@@ -67,7 +67,7 @@ NOTE: Here `:e` short form for EDIT. `:o` is the short form for OPEN.
 
 ### Closing the VIM Editor (Quit)
 
-The below command fails if there are any unsaved changes.
+The below command will attempt to quit the editor. It will fail if there are any unsaved changes.
 ```
 :q
 ```
