@@ -1,5 +1,5 @@
 ## What is Tmux?
-Tmux is a terminal Multiplexer . There are multiple advantages in using tmux
+Tmux is a terminal Multiplexer . There are several advantages on why should one use tmux
 
 * Terminal Split Screen
 * Multiple Terminal Sessions with simple commands
@@ -22,7 +22,7 @@ If we just want to create a new session with default name, just type the followi
 tmux
 ```
 
-In order to get detached from a session
+In order to detached from a session
 
 ```
 tmux detach
