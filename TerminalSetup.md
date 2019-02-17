@@ -229,5 +229,8 @@ sudo chown -R `whoami` /usr/local
 * `whoami` Variable that represents OSX username
 
 
+### Other Installations
 
+* NPM
+* Node JS
 
