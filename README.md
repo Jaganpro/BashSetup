@@ -1,4 +1,4 @@
-# Mastering Mac Terminal
+# Mac Terminal Notes
 
 * In order to get confortable with Mac Terminal, please read the following topics
   * [Get to know Bash Basics](https://github.com/Jaganpro/Mastering-Mac-Terminal/blob/master/Bash%20Basics.md)
