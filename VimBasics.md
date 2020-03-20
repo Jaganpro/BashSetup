@@ -21,6 +21,37 @@
 
 ![image](https://user-images.githubusercontent.com/2145211/77178720-dd187a00-6a9d-11ea-93ec-2ff1917d2b2e.png)
 
+* Normal Mode - 
+  * This is where we do most of textual and visual interactions.
+  * Here you interact with text and tell it what to do.
+  
+* Insert Mode - 
+  * i - insert
+  * a - append
+  * c - change
+
+* Visual Mode
+  * Similar to Normal Mode, except it works with highlighted blocks of text.
+  * You have different types
+    * Visual Character Mode
+    * Visual Line Mode
+    * Visual Block Mode
+    
+* Command Line Mode
+  * This is how you will be able to utilize unix commands which have been shipped from the 90's (Example: Search and Replace)
+  
 ![image](https://user-images.githubusercontent.com/2145211/77179025-4bf5d300-6a9e-11ea-81c9-c831af17ab2c.png)
 
+* Vim is not a character editor.
+* It is a language by itself. 
+* We want to think in terms of operators, text objects and motions
+  * Operators act upon text objects or motions.
+
 ![image](https://user-images.githubusercontent.com/2145211/77179781-506ebb80-6a9f-11ea-87eb-adbc3add66c1.png)
+
+* Operators are the verb of the vim language
+* It specifies actions to be performed on text objects or motions.
+  * c - change
+  * d - delete
+  * y - yank (Copy to your register)
+  * gU - Make it uppercase ( Or to remember - go Uppercase)
