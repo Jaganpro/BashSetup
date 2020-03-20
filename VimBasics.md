@@ -54,4 +54,4 @@
   * c - change
   * d - delete
   * y - yank (Copy to your register)
-  * gU - Make it uppercase ( Or to remember - go Uppercase)
+  * gU - Make it uppercase (go Uppercase - if you want to remember)
