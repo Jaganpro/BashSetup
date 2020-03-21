@@ -100,6 +100,9 @@ vim --version|head -n 1
 
 Refer to this tutorial, if you want to get started with VIM  https://github.com/Jaganpro/Vim-Tutorial
 
+* There is another flavor of Vim, which is `macvim`
+  * `brew install macvim`
+
 
 ### 5. The Z Shell 
 
