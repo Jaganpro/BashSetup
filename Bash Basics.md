@@ -1,11 +1,17 @@
 # Simple Bash Commands
 Collection of simple bash commands to get started with Terminal
 
-#### NOTE:
+#### NOTE 1:
 > ~ --> This symbol means we are in User's Home directory <br />
 > $ --> This symbol means we are in Root Directory <br />
 > [Command] + [K] --> Clears out Terminal Screen <br />
 > [Control] + [C] --> Break / Exit from application within Terminal
+
+#### NOTE 2:
+* In order to change the shell, please use the following command 
+ 
+`chsh -s /bin/bash` (Bash By Default)
+`chsh -s /bin/zsh` (Zsh by Default)
 
 ## Basics
 
