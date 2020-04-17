@@ -10,8 +10,8 @@ Collection of simple bash commands to get started with Terminal
 #### NOTE 2:
 * In order to change the shell, please use the following command 
  
-`chsh -s /bin/bash` (Bash By Default)
-`chsh -s /bin/zsh` (Zsh by Default)
+* `chsh -s /bin/bash` (Bash By Default)
+* `chsh -s /bin/zsh` (Zsh by Default)
 
 ## Basics
 
