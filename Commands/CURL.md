@@ -14,11 +14,16 @@
 
 ## COMMANDS:
 
+### COMMAND 1:
 * `curl --help` 
   * Provides a list of all commands and parameters supported. 
-  
+   ![image](https://user-images.githubusercontent.com/2145211/132132229-49625964-7dd7-4f53-ab67-83fb91493a0f.png)
+
+### COMMAND 2:
 * `curl https://jsonplaceholder.typicode.com/posts` 
   * Syntax = curl (website)
+  ![image](https://user-images.githubusercontent.com/2145211/132132259-5b031b9a-55ac-447e-b49d-ce061584f2a6.png)
 
+### COMMAND 3:
 * `curl https://jsonplaceholder.typicode.com/posts -i`
   * -i -> Includes Header Information 
