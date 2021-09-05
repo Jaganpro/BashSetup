@@ -33,6 +33,15 @@
 * `curl https://jsonplaceholder.typicode.com/posts/1 --output sample.txt`
 
 ### COMMAND 5: (Creating a POST Request with CURL)
-* `curl https://jsonplaceholder.typicode.com/posts --data "title=Hello&Body=HelloWorld"
+* `curl https://jsonplaceholder.typicode.com/posts --data "title=Hello&Body=HelloWorld" --request POST`
   * --date --> Pass Data
 ![image](https://user-images.githubusercontent.com/2145211/132134485-e3fac820-183f-425a-a267-4f2174fec699.png)
+
+### COMMAND 6: (Specify PUT, PATCH, POST etc.)
+* `curl https://jsonplaceholder.typicode.com/posts --data "title=Hello&Body=HelloWorld" --request PATCH`
+  * Use the --request command to include PUT, POST
+![image](https://user-images.githubusercontent.com/2145211/132134693-17d86c49-ea60-433f-ba01-aa9456e869fc.png)
+
+### COMMAND 7: (Basic Authentication with CURL)
+*  `curl https://jsonplaceholder.typicode.com/posts --user username:password`
+  * Use the --user - Include basic Authentication (Ie, Username and Password when dealing with URL with Authentication)
